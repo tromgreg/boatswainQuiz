@@ -1,2 +1,6 @@
 # boatswainQuiz
 Homework for week 4 
+--Log--
+
+20APR2020:
+    Stared initial working of the project. This includes the HTML for a screen that the user can enter their name into and then that name will save (through session storage) for the remainder of the test. upon the submission of the user's name the quiz is triggered through submit even to href of the quiz.html. Initial css started. I will play around flexbox and grid during this project and also utilize a fair amount trying to hone building js functions with for loops. 
