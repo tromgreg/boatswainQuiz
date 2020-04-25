@@ -26,25 +26,104 @@ body{
     
 }
 
-.welcome_text input{
-    font-size: 45px;
-    height: 50px;
-    width: 500px;
-    margin-bottom: 15px;
+.welcome_form input {
     background-color: transparent;
+    color: #fff;
+    font-size: 30px;
+    text-align: center;
     border: none;
-    color: white;
+    border-bottom: 1px solid #fff;
+    margin-bottom: 15px;
 }
 
-.welcome_text button{
-    padding: 15px 0;
-    background-color: transparent;
+.welcome_form input:focus {
+    outline: none;
+}
+
+.welcome_form button {
+    padding: 20px 0;
+    border: none;
     border-radius: 100px;
-    font-size: 20px;
-    transition: 0.5s all;
+    background-color: #fff;
+    color:  #eeb868;
+    font-size: 22px;
+    transition: 0.4s all;
 }
 
 .welcome_text :hover{
     transform: translateY(5px);
-    cursor: ns-resize;
 }
+
+.quiz{
+    display: grid;
+    grid-template-rows: 60px auto;
+    height: 500px;
+    width: 800px;
+}
+
+.quiz_header{
+    display: flex;
+    justify-content: space-between;
+    border-top-left-radius:4px ;
+    border-top-right-radius: 4px;
+    box-shadow:0px 2px 5px 1px black;
+    z-index: 1;
+    background-color: red; 
+}
+
+.quiz_body {
+    padding: 30px 30px;
+  }
+  .quiz_user {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding-left: 30px;
+  }
+  
+  .quiz_timer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100px;
+    background-color: #eeb868;
+    color: #fff;
+  }
+  .quiz_body {
+    background-color: #ecf0f1;
+  }
+  
+  .option_group {
+    list-style-type: none;
+    margin: 30px 0;
+  }
+  
+  .option {
+    display: block;
+    width: 300px;
+    background-color: #fff;
+    margin-bottom: 20px;
+    padding: 15px 20px;
+    border: 2px solid transparent;
+    transition: 0.4s all;
+  }
+  
+  .option:hover {
+    cursor: pointer;
+    /* background-color: rgba(255, 255, 255, 0.1); */
+    border: 2px solid #eeb868;
+    color: #eeb868;
+  }
+  .option.active {
+    background-color:#eeb868;
+    color: #fff;
+  }
+  .btn-next {
+    border: none;
+    padding: 15px 35px;
+    background-color: #eeb868;
+    color: #fff;
+    border-radius: 27px;
+    transition: 0.4s all;
+  }

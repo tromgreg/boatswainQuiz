@@ -9,15 +9,23 @@
 <body>
     <div class="wrapper">
         <div class="quiz">
-            <div class="quiz-header">
-
-
-
-
+          <div class="quiz_header">
+            <div class="quiz_user">
+              <h4>Welcome! <span class="name"></span></h4>
             </div>
+            <div class="quiz_timer">
+              <span class="time">00:00</span>
+            </div>
+          </div>
+          <div class="quiz_body">
+          <div id="questions"></div>
 
-
+          <button class="btn-next" onclick="next()">Next Question</button>
         </div>
+      </div>
     </div>
-</body>
+    <script src="JS files/quiz.js"></script>
+    <script src="JS files/user.js"></script>
+    <script src="JS files/time.js"></script>
+  </body>
 </html>
