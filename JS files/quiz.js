@@ -1,57 +1,57 @@
 let questions =  [
 {
     id: 1,
-    question: "what is a horse?",
-    answer: "A four legged animal",
+    question: "What is the mechanical advantage of a Gun Tackle",
+    answer: "2:1 advantage",
     options:[
-        "a man with a long arm",
-        "a bad guy in a comic book",
-        "a four legged animal",
+        "2:1 advantage",
+        "4:1 advantage",
+        "3:2 advantage",
         "none of the above"
     ]
 },
 {
     id: 2,
-    question: "what is a horse?",
-    answer: "A four legged animal",
+    question: "How is the size of a block measured?",
+    answer: "Measuring the size of the cheek",
     options:[
-        "a man with a long arm",
-        "a bad guy in a comic book",
-        "a four legged animal",
+        "using a caliper on the sheave ",
+        "Using the measurement chart in the NAVEDTRA 14343",
+        "Measuring the size of the cheek",
         "none of the above"
     ]
 },
 {
     id: 3,
-    question: "what is a horse?",
-    answer: "A four legged animal",
+    question: "The first thing a Boatswain’s Mate must do when analyzing a job is to determine?",
+    answer: "the objective of the job",
     options:[
-        "a man with a long arm",
-        "a bad guy in a comic book",
-        "a four legged animal",
+        "the objective of the job",
+        "how much hazmat will need to be issued to complete the PMS",
+        "weather or not the overhead lighting in the space is working",
         "none of the above"
     ]
 },
 {
     id: 4,
-    question: "what is a horse?",
-    answer: "A four legged animal",
+    question: "Which of the following calls consists of two slurred veer calls?",
+    answer: "(Four Side Boys) Tend the side",
     options:[
-        "a man with a long arm",
-        "a bad guy in a comic book",
-        "a four legged animal",
-        "none of the above"
+        "belay",
+        "attention",
+        "mess call",
+        "(Four Side Boys) Tend the side"
     ]
 },
 {
     id: 5,
-    question: "What is the full form of E-mail",
-    answer: "Electronic Mail",
+    question: "Who is usually responsible for the neatness of the quarterdeck?",
+    answer: "OOD Messenger",
     options: [
-        "Electronic Mail",
-        "Electric Mail",
-        "Engine Mail",
-        "None of these"
+        "OOD Messenger",
+        "Petty Officer of the Watch",
+        "Command Duty Officer",
+        "Duty Deck Department POC"
     ]
   }
 ];
@@ -94,16 +94,16 @@ function show(count){
     let [first, second, third, fourth] = questions[count].options;
 
     question.innerHTML = `
-    <h2>Q${count = 1}. ${questions [count].question}</h2>
-        <ul class="option_group">
-        <li class="option">${first}</li>
-        <li class="option">${second}</li>
-        <li class="option">${third}</li>
-        <li class="option">${fourth}</li>
-        </ul>`;
-
- toggleActive();
-}
+    <h2>Q${count + 1}. ${questions[count].question}</h2>
+     <ul class="option_group">
+    <li class="option">${first}</li>
+    <li class="option">${second}</li>
+    <li class="option">${third}</li>
+    <li class="option">${fourth}</li>
+  </ul> 
+    `;
+    toggleActive();
+  }
 
 function toggleActive(){
     let option = document.querySelectorAll("li.option");
